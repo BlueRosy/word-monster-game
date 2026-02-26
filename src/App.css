@@ -608,3 +608,76 @@ body {
   color: var(--wrong);
   font-size: 0.8rem;
 }
+
+/* ---------- 响应式（手机端优化） ---------- */
+@media (max-width: 640px) {
+  body {
+    background-position: center;
+  }
+
+  #root {
+    padding: 0.75rem 0.5rem;
+  }
+
+  .screen {
+    max-width: 100%;
+    min-height: 100vh;
+    padding-bottom: 1.5rem;
+  }
+
+  .screen.home {
+    justify-content: flex-start;
+    gap: 1.1rem;
+  }
+
+  .hero h1 {
+    font-size: 1.45rem;
+  }
+
+  .girl-emoji {
+    font-size: 3.2rem;
+  }
+
+  .modes {
+    padding: 1rem 1rem;
+    border-radius: 14px;
+  }
+
+  .word-count {
+    font-size: 0.8rem;
+  }
+
+  .btn-start {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.8rem 1.2rem;
+  }
+
+  .btn-secondary,
+  .btn-wrong {
+    width: 100%;
+    text-align: center;
+  }
+
+  .game-hud {
+    max-width: 100%;
+  }
+
+  .monster-word {
+    max-width: 72vw;
+    font-size: 1.15rem;
+  }
+
+  .question-panel {
+    padding: 1.1rem 1rem;
+    border-radius: 16px;
+  }
+
+  .wrong-panel {
+    width: min(100vw - 2rem, 520px);
+  }
+
+  .wrong-item {
+    grid-template-columns: auto 1.3fr 1.4fr auto;
+  }
+}
