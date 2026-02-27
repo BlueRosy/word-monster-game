@@ -139,6 +139,10 @@ export default function App() {
   )
 
   const resetMastery = () => {
+    if (typeof window !== 'undefined') {
+      const ok = window.confirm('确定要重置所有通关进度吗？（错题记录会保留）')
+      if (!ok) return
+    }
     setMastery([])
   }
 
